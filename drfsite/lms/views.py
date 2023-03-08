@@ -16,7 +16,7 @@ class CourseAPIList(generics.ListCreateAPIView):
     serializer_class = CourseSerializer
     #permission_classes = (IsAuthenticatedOrReadOnly,)
 
-
+ 
 class CourseAPIUpdate(generics.RetrieveUpdateAPIView):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
